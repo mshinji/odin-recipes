@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Autography";
+    src: url('fonts/autography/Autography.otf');
+
+    font-family: "Cinzel";
+    src: url('fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+
+    font-family: "Cinzel-Decorative";
+    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf');
+    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf');
+    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf');
+
+    font-family: "Fira-Code";
+    src: url('fonts/Fira_Code/FiraCode-VariableFont_wght.ttf')
+}
+
+
+ul,
+ol {
+    display: inline-block;
+    text-align: left;
+}
+
+body{
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    font-family: Fira-Code;
+}
+ 
+h1 a{
+    font-family: Autography;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 20%;
+    color: black;
+    text-decoration: none;
+}
+
+
+h2 {
+    font-family: Cinzel;
+}
+
+img {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+}
+
+/* h2::first-letter{
+    font-family: Cinzel-Decorative;
+} */
+
+h1 {
+    margin: 30px 0px 20px 0px ;
+}
+
+h2 {
+    margin: 30px 0px 0px 0px ;
+}
+
+#shinji {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Autography';
+    position: fixed;
+    left: 1150px;
+    padding: 10px;
+}
+
+a{
+    font-family: Fira-code;
+    color: black;
+    text-decoration: none;
+} 
+a:hover{
+    color: grey;
+    text-decoration:underline;
+
+}
+
+html {
+    overflow-y:scroll;
+}
