@@ -37,7 +37,6 @@ body {
     background-color: #FFFFFF;
     width: 50%;
     margin: 0.5% auto 0.5% auto;
-    box-sizing: border-box;
     border: 2px #3C3B3B solid;
     border-radius: 5px;
 }
@@ -70,7 +69,6 @@ div.listcontainer a:hover{
     background-color: #ffffff;
     width: 49.5%;
     margin: 0 1% 0 0;
-    box-sizing: border-box;
     aspect-ratio: 1 / 1;
     text-align: center;
     padding: 1%;
@@ -221,7 +219,6 @@ body:has(a#onigiri:hover) #description::after  {
 
 
 .list-container {
-    box-sizing: border-box;
     width: 49.5%;
     margin: 0 0 0 0;
     position: relative;
@@ -269,7 +266,6 @@ body:has(a#onigiri:hover) #description::after  {
     text-shadow: 1px 1px 1px #3C3B3B;
 }
 .right-container {
-    box-sizing: border-box;
     width: 49.5%;
     margin: 0 0 0 0;
     position: relative;
@@ -320,13 +316,13 @@ body:has(a#onigiri:hover) #description::after  {
     justify-content: center;
     align-items: center;
     width: 96%;
-    height: calc(84.3% / 6);
+    height: calc(85% / 6);
 }
 
 
 .right-container ul#carbonara-ing li {
     border: 2px #3C3B3B solid;
-    height: calc( 94% / 8);
+    height: calc( 94.5% / 8);
     padding: auto;
     margin: 0 auto;
     width: 96%;
@@ -342,7 +338,7 @@ body:has(a#onigiri:hover) #description::after  {
 .right-container ul#miso-ing li {
     border: 2px #3C3B3B solid;
     border-radius: 5px;
-    height: calc(86.5% / 5);
+    height: calc(87.5% / 5);
     padding: auto;
     margin: 0 auto;
     width: 96%;
@@ -406,66 +402,4 @@ html {
 *{
     box-sizing: border-box;
 }
-
-/* *{
-    border: 1px #80808050 solid
-} */
-/* ul,
-ol {
-    display: inline-block;
-    text-align: left;
-}
-
-body{
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    font-family: Fira Code;
-}
-
- 
-body header h1 a{
-    font-family: 'Autography';
-    font-size: 50px;
-    font-weight: 100;
-    line-height: 20%;
-    text-decoration: none;
-    margin: 30px 0px 20px 0px ;
-}
-
-
-h2 {
-    font-family: Cinzel;
-    font-weight: 500;
-}
-
-img {
-    border-radius: 50%;
-    border: 1px solid black;
-    height: 300px;
-    width: 300px;
-}
-
- h2::first-letter{
-    font-family: Cinzel-Decorative;
-    font-weight: 700;
-} 
-
-h2 {
-    margin: 30px 0px 0px 0px ;
-}
-
-#menu {
-    font-family: Enriqueta;
-    color: black;
-    text-decoration: none;
-    
-}
-
-a#menu:hover{
-    text-decoration: underline;
-}
-html {
-    overflow-y:scroll;
-} */
 
