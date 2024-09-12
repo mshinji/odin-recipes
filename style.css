@@ -1,21 +1,409 @@
 @font-face {
+    font-family: 'Skranji';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/skranji/v13/OZpDg_dtriVFNerMUzykkw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+@font-face {
     font-family: "Autography";
-    src: url('fonts/autography/Autography.otf');
-
-    font-family: "Cinzel";
-    src: url('fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
-
+    src: url('fonts/autography/Autography.otf') format("opentype");
+}
+@font-face {
+    font-family: "Cinzel"; 
+    src: url('fonts/Cinzel/Cinzel-VariableFont_wght.ttf') format("truetype");
+}
+@font-face{
     font-family: "Cinzel-Decorative";
-    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf');
-    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf');
-    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf');
-
+    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf') format("truetype"), url('fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf') format("truetype"), url('fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf') format("truetype");
+}
+@font-face{
     font-family: "Fira-Code";
-    src: url('fonts/Fira_Code/FiraCode-VariableFont_wght.ttf')
+    src: url('fonts/Fira_Code/FiraCode-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face{
+font-family: 'Enriqueta';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/enriqueta/v17/goksH6L7AUFrRvV44HVjTEqi.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+.homediv{
+    background-color: #FFFFFF;
+    width: 50%;
+    margin: 0.5% auto 0.5% auto;
+    box-sizing: border-box;
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+}
+
+.homediv h1 {
+    text-align: center;;
+    font-family: Skranji;
+    font-weight: 400;
+    margin: 0 0 0 0;
+    padding: 0;
+
+}
+
+.homediv a {
+    text-decoration: none;
+    color: #3C3B3B;
+
+}
+div.listcontainer a:hover{
+/*     text-decoration: underline; */
+    color: #e2b367;
+    text-shadow: 2px 2px 0 #3C3B3B;
+    
+}
+
+.image-container {
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 49.5%;
+    margin: 0 1% 0 0;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    padding: 1%;
+    display: inline-block;
+    position: relative;
+}
+.image-container .image {
+    border: 2px #3C3B3B solid;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-container .image .background {
+    background-image: url('./images/odin.png');
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.image-container .image .onigiri {
+    background-image: url('./images/onigiri.jpg');
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.image-container .image .carbonara {
+    background-image: url('./images/carbonara.jpg');
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
 }
 
 
-ul,
+.image-container .image .miso {
+    background-image: url('./images/miso.jpg');
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+
+
+.image-container .image .carbonara p {
+    position: absolute;
+    margin: 0 auto;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: 'Fira-Code';
+    text-shadow:2px 2px #3C3B3B;
+    color: #fff;
+}
+
+.image-container .image .onigiri p {
+    position: absolute;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: 'Fira-Code';
+    text-shadow:2px 2px #3C3B3B;
+    color: #fff;
+}
+
+.image-container .image .miso p {
+    position: absolute;
+    margin: 0 auto;
+    font-weight: 600;  
+    font-family: 'Fira-Code';
+    text-shadow:2px 2px #3C3B3B;
+    color: #fff;
+}
+
+
+body:has(a#carbonara:hover) #image {
+    background-image: url('./images/carbonara.jpg');
+    border-radius: 100%;
+} 
+
+body:has(a#miso-soup:hover) #image {
+    background-image: url('./images/miso.jpg');
+    border-radius: 100%;
+} 
+
+.image-container .image .background {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.image-container .image .background  p {
+    position: absolute;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: 'Fira-Code';
+    text-shadow:2px 2px #3C3B3B;
+    color: #fff;
+}
+
+
+body:has(a#onigiri:hover) #image {
+    background-image: url('./images/onigiri.jpg');
+    border-radius: 100%;
+    background-size: 100%;
+    height: 100%;
+} 
+
+body:has(a#carbonara:hover) #description::after  {
+    content: "This classic spaghetti alla carbonara recipe is smooth, creamy, and full of rich Italian flavor." ;
+
+
+} 
+body:has(a#miso-soup:hover) #description::after  {
+    content: "This miso soup is full of savory flavors. Add more dashi to your soup if you want a stronger stock. You can use yellow, white, or red miso paste for this soup — yellow miso is sweet and creamy, red miso is stronger and saltier." ;
+} 
+body:has(a#onigiri:hover) #description::after  {
+    content: "This easy onigiri recipe is also fun to make! These rice balls are a staple of Japanese lunchboxes (bento). You can put almost anything in these rice balls." ;
+} 
+
+
+.list-container {
+    box-sizing: border-box;
+    width: 49.5%;
+    margin: 0 0 0 0;
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+    aspect-ratio: 1 / 1;
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    display: inline-block;
+} 
+.list-container ul{
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    border: 1px  transparent solid;
+}
+
+.list-container ul li {
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 0 auto;
+    font-family: 'Skranji';
+    font-size: 100%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: calc(92% / 3);
+    
+}
+
+
+.list-container ul a {
+    text-decoration: none;
+    color: #3C3B3B;
+}
+
+.list-container ul a:hover {
+    color: #e2b367;
+    text-shadow: 1px 1px 1px #3C3B3B;
+}
+.right-container {
+    box-sizing: border-box;
+    width: 49.5%;
+    margin: 0 0 0 0;
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+    aspect-ratio: 1 / 1;
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    display: inline-block;
+    
+} 
+
+.right-container h2 {
+    height: 10%;
+    font-family: 'Skranji';
+    color: #3C3B3B;
+    width: 50%;
+    margin: 2% auto 0 auto;
+    padding: 0;
+    border: 1px  transparent solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;   
+    border-radius: 5px;
+}
+.right-container ul{
+    height: 87%;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    border: 1px transparent solid;
+}
+
+.right-container ul#onigiri-ing li {
+    height: calc( 100% / 8);
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 0 auto;
+    font-family: 'Skranji';
+    font-size: 100%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: calc(84.3% / 6);
+}
+
+
+.right-container ul#carbonara-ing li {
+    border: 2px #3C3B3B solid;
+    height: calc( 94% / 8);
+    padding: auto;
+    margin: 0 auto;
+    width: 96%;
+    font-family: 'Skranji';
+    font-size: 100%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.right-container ul#miso-ing li {
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    height: calc(86.5% / 5);
+    padding: auto;
+    margin: 0 auto;
+    width: 96%;
+    font-family: 'Skranji';
+    font-size: 100%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps {
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 50%;
+    padding: 0;
+    margin: 0.5% auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps h2 {
+    font-family: 'Skranji';
+    color: #3C3B3B;
+    width: 50%;
+    margin: 1% auto 0 auto;
+    padding: 0;
+    border: 1px  transparent solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;   
+    border-radius: 5px;
+}
+
+.steps ol {
+margin: 1% auto 1% auto;
+width: 98%;
+padding: 0;
+list-style-position: inside;
+margin: 1px black solid;
+}
+
+.steps li {
+    border: 2px #3C3B3B solid;
+    border-radius: 5px;
+    margin: 1% 0;
+    padding: 0.5%;
+    width: 100%;
+    font-family: 'Skranji';
+    font-size: 100%;
+}
+
+html {
+    overflow-y:scroll;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+/* *{
+    border: 1px #80808050 solid
+} */
+/* ul,
 ol {
     display: inline-block;
     text-align: left;
@@ -23,24 +411,25 @@ ol {
 
 body{
     text-align: center;
-    width: 30%;
+    width: 60%;
     margin: auto;
-    font-family: Fira-Code;
+    font-family: Fira Code;
 }
 
  
 body header h1 a{
-    font-family: Autography;
+    font-family: 'Autography';
     font-size: 50px;
     font-weight: 100;
     line-height: 20%;
-    color: black;
     text-decoration: none;
+    margin: 30px 0px 20px 0px ;
 }
 
 
 h2 {
     font-family: Cinzel;
+    font-weight: 500;
 }
 
 img {
@@ -50,20 +439,17 @@ img {
     width: 300px;
 }
 
-/* h2::first-letter{
+ h2::first-letter{
     font-family: Cinzel-Decorative;
-} */
-
-h1 {
-    margin: 30px 0px 20px 0px ;
-}
+    font-weight: 700;
+} 
 
 h2 {
     margin: 30px 0px 0px 0px ;
 }
 
 #menu {
-    font-family: Fira-code;
+    font-family: Enriqueta;
     color: black;
     text-decoration: none;
     
@@ -74,4 +460,5 @@ a#menu:hover{
 }
 html {
     overflow-y:scroll;
-}
+} */
+
